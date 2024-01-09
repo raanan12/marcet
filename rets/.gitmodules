@@ -1,0 +1,3 @@
+[submodule "rets"]
+	path = rets
+	url = https://github.com/raanan12/marcet.git
