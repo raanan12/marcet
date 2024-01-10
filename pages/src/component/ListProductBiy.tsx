@@ -3,7 +3,7 @@ import {AllData} from '../contextApi'
 import ProductBuy from './ProductBuy'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Box } from '@mui/material';
-
+import './styls/pageBuyList.css'
 
 export default function ListProductBiy() {
   const AllData1 = useContext(AllData)
@@ -17,7 +17,7 @@ export default function ListProductBiy() {
   },[AllData1?.choseProduct])
   return (
     <div className='productBuy'>
-        <div style={{display:'flex',alignItems:'center'}}>
+        <div style={{display:'flex',alignItems:'center',width:"80%"}}>
             <div style={{display:'flex',alignItems:'center',justifyContent:'center',marginLeft:'8px'}}>
                <ShoppingCartIcon sx={{marginRight:'8px',fontSize:'19px',padding:'1px',justifyContent:'center',background:'gray',display:'flex',alignItems:"center",borderRadius:'3px'}}/>
                <p style={{fontSize:'18px',color:'gray',fontWeight:'bold'}}> {`your shopping cart (${AllData1?.choseProduct.length} products)` }</p>
@@ -37,8 +37,7 @@ export default function ListProductBiy() {
                   '&::-webkit-scrollbar-thumb': {
                       backgroundColor: '#888',
                       borderRadius: '4px'
-                  },
-
+                  }
               }}
           >
               {AllData1?.choseProduct.map((val,index) => (

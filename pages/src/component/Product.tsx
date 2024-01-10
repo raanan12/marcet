@@ -1,10 +1,10 @@
 import React,{useContext} from 'react'
 import {AllData} from '../contextApi'
-
+import './styls/styleProduct.css'
 export default function Product(props:any) {
   const AllData1 = useContext(AllData)
   return (
-    <div className='product' style={{display:'flex',flexDirection:'column',justifyContent:'space-between',margin:'5px',padding:'5px',width:'270px',height:'400px',marginTop:'20px'}}>
+    <div className='product'  >
         <img style={{height:'235px',width:'255px',borderRadius:'10px'}} src={props.val.productImg} alt="" />
         <p>{props.val.productName}</p>
         <p style={{fontWeight:'bold',fontSize:'20px',textAlign:'right'}}>₪ {props.val.productPrice} </p>

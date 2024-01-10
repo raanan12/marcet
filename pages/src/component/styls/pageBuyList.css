@@ -1,0 +1,8 @@
+.productBuy{
+    width: 70%;
+    box-shadow: 1px 1px 1px 1px gray;
+    margin: 5px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 15px;
+}

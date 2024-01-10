@@ -1,0 +1,16 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    width: 270px;
+    height: 400px;
+    margin-top: 20px;
+    transition: box-shadow 0.2s ease;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.product:hover{
+    box-shadow: 1px 1px 1px 1px rgb(224, 220, 220),
+                1px 1px 1px 1px rgb(224, 220, 220)}

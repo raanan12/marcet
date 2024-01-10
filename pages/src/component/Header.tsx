@@ -92,7 +92,7 @@ const Header = (props:any) => {
           {signShow()}
         </div>
 
-        <Typography style={{paddingRight:'20px'}} variant="h4" component="h1"> GlobalMallOnline </Typography>
+        <Typography style={{paddingRight:'140px'}} variant="h4" component="h1"> GlobalMallOnline </Typography>
 
         <IconButton
         onClick={() => {nav('/')}}
