@@ -5,16 +5,24 @@ const app = express();
 const bodyParser = require('body-parser');
 const db = require('mongoose');
 const nodemailer = require('nodemailer');
+const path = require('path');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+
+
 const url = 'mongodb+srv://ranan97531:2524097531R@cluster0.rhkco4m.mongodb.net/shopReact';
 db.connect(url).then(() => {
     console.log('db is on');
 });
+
+// all pages
 app.use(express.static('./pages/build'));
-// app.get('*', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, '../rest/build', 'index.html'));
-//   });
+
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './pages/build', 'index.html'));
+  });
+
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
