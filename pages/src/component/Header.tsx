@@ -13,6 +13,7 @@ const Header = (props:any) => {
   const [search,setSearch]=useState<string>('')
   const [amountProduct,setAmountProduct]=useState<number>()
   const AllData1 = useContext(AllData)
+  // Update the amount of products, according to the user's choice
   useEffect(()=>{
     let sum:number = 0
     AllData1?.choseProduct.forEach((val)=>{
@@ -21,15 +22,18 @@ const Header = (props:any) => {
     setAmountProduct(sum)
   },[AllData1?.choseProduct])
 
-  // עידכון מספר המוצרים שנבחרו 
+  // Update the array of products the user sees, according to the user's search
   useEffect(()=>{
     AllData1?.search(search)
   },[search])
 
+
+  //Check if there is a logged-in user, if so, displays the logged-in user, if not displays the options either log in or register
   const signShow = ()=>{
     let a:any = AllData1?.userConect.name.length
     if(a < 1){
       return (
+        // show options (sign in / sign up)
         <div style={{ display: 'flex', marginLeft: "10px", alignItems: 'center', borderLeft: 'gray 2px solid', paddingLeft: '10px' }}>
           <p style={{cursor:'pointer'}} onClick={() => { nav('/signIn') }}> sign in / </p>
           <p style={{cursor:'pointer'}} onClick={() => { nav('/signUp') }}>{' sign up '}</p>
@@ -38,6 +42,7 @@ const Header = (props:any) => {
       )
     }
     else{
+      // show logged-in user
       return (
         <div onClick={()=>{nav('/pageUser')}} style={{ display: 'flex', marginLeft: "10px", alignItems: 'center', borderLeft: 'gray 2px solid', paddingLeft: '10px' }}>
           <p>{AllData1?.userConect.name}</p>
@@ -47,7 +52,7 @@ const Header = (props:any) => {
     }
   }
 
-  // הצגת תיבת החיפוש בכותרת 
+  // show input search 
   const show1 = ()=>{
     if(props.show == true){
       return <Box sx={{ display: 'flex', alignItems: 'center', margin: 5, borderRadius: 100, width: 590, background: "white", padding: 0 }}>
@@ -57,6 +62,8 @@ const Header = (props:any) => {
     }
   }
 
+
+//If the user wants to go to a buy page, check if products are selected, if not show a message about it
   const goToC = ()=>{
     let len:any = AllData1?.choseProduct.length
     if(len > 0 ){
