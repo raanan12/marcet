@@ -6,7 +6,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
-
+import './styls/header.css'
 
 const Header = (props:any) => {
   const nav = useNavigate()
@@ -34,10 +34,10 @@ const Header = (props:any) => {
     if(a < 1){
       return (
         // show options (sign in / sign up)
-        <div style={{ display: 'flex', marginLeft: "10px", alignItems: 'center', borderLeft: 'gray 2px solid', paddingLeft: '10px' }}>
-          <p style={{cursor:'pointer'}} onClick={() => { nav('/signIn') }}> sign in / </p>
-          <p style={{cursor:'pointer'}} onClick={() => { nav('/signUp') }}>{' sign up '}</p>
-          <AccountCircleRoundedIcon sx={{ fontSize: '2rem', marginLeft: '5px' }} />
+        <div className='divOptiens' >
+          <p className='signIU' id='signIn' style={{cursor:'pointer'}} onClick={() => { nav('/signIn') }}> sign In </p>
+          <p className='signIU' id='signUp' style={{cursor:'pointer'}} onClick={() => { nav('/signUp') }}>{' sign up '}</p>
+          {/* <AccountCircleRoundedIcon sx={{ fontSize: '2rem', marginLeft: '5px' }} /> */}
         </div>
       )
     }

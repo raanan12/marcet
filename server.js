@@ -11,7 +11,7 @@ const url = 'mongodb+srv://ranan97531:2524097531R@cluster0.rhkco4m.mongodb.net/s
 db.connect(url).then(() => {
     console.log('db is on');
 });
-app.use(express.static('./rets/build'));
+app.use(express.static('./pages/build'));
 // app.get('*', (req, res) => {
 //     res.sendFile(path.resolve(__dirname, '../rest/build', 'index.html'));
 //   });
