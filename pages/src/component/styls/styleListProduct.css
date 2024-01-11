@@ -1,0 +1,25 @@
+
+
+@media (max-width:500px) {
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+@media (min-width:500px) {
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+    }
+}
+

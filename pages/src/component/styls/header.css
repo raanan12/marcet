@@ -1,3 +1,46 @@
+
+@media (max-width:600px){
+    .title{
+        display: none;
+    }
+    .divSerch{
+        display: flex;
+        align-items: center;
+        border-radius: 100px;
+        width: 70%;
+        background: white;
+        padding: 0px;
+        margin-bottom: 20px;
+        margin: 5px;
+    }
+
+}
+
+@media (min-width:600px) {
+    
+    .divSerch{
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        border-radius: 100px;
+        width: 60%;
+        background: white;
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+.main{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+}
+
 .signIU{
     height: 25px;
     width: 70px;
@@ -6,12 +49,23 @@
     justify-content: center;
     border: 2px solid white;
     font-weight: 600;
+    cursor: pointer;
 }
 
 #signIn{
     background: white;
     color: black;
     border-radius: 15px;
+}
+
+.title{
+    text-align: center;
+}
+
+.iconeSH{
+    font-size: 50rem;
+    height: 30rem;
+    width: 40px;
 }
 
 .divOptiens{
@@ -32,4 +86,5 @@
     padding-left: 3px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    color: white;
 }

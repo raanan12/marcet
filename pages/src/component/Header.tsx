@@ -35,8 +35,8 @@ const Header = (props:any) => {
       return (
         // show options (sign in / sign up)
         <div className='divOptiens' >
-          <p className='signIU' id='signIn' style={{cursor:'pointer'}} onClick={() => { nav('/signIn') }}> sign In </p>
-          <p className='signIU' id='signUp' style={{cursor:'pointer'}} onClick={() => { nav('/signUp') }}>{' sign up '}</p>
+          <p className='signIU' id='signIn'  onClick={() => { nav('/signIn') }}> sign In </p>
+          <p className='signIU' id='signUp'  onClick={() => { nav('/signUp') }}>{' sign up '}</p>
           {/* <AccountCircleRoundedIcon sx={{ fontSize: '2rem', marginLeft: '5px' }} /> */}
         </div>
       )
@@ -55,10 +55,10 @@ const Header = (props:any) => {
   // show input search 
   const show1 = ()=>{
     if(props.show == true){
-      return <Box sx={{ display: 'flex', alignItems: 'center', margin: 5, borderRadius: 100, width: 590, background: "white", padding: 0 }}>
-        <SearchIcon sx={{ paddingLeft: 1 }} fontSize='large' />
-        <input onChange={(e) => { setSearch(e.target.value) }} style={{ paddingLeft: '10px', fontSize: '1.2rem', border: 'none', borderLeft: "1px black solid", width: 540, height: 40, borderTopRightRadius: 100, borderBottomRightRadius: 100 }} type="text" />
-      </Box>
+      return <div className='divSerch'>
+        <SearchIcon fontSize='large' />
+        <input onChange={(e) => { setSearch(e.target.value) }} style={{ paddingLeft: '10px', border: 'none', borderLeft: "1px black solid", width: '100%', height: 40, borderTopRightRadius: 100, borderBottomRightRadius: 100 }} type="text" />
+      </div>
     }
   }
 
@@ -76,14 +76,13 @@ const Header = (props:any) => {
 
 
   return (
-    <div style={{backgroundColor: '#212121',display:'flex',flexDirection:'column',alignItems:'center'}}>
-      <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px', backgroundColor: '#212121', color: 'white', boxShadow: '0px 1px 5px rgba(0, 0, 0, 0.2)' ,width:'100%'}}>
+    <div className='main'>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between',width:'100%'}}>
         <div style={{display:'flex',alignItems:'center'}}>
         <IconButton
           onClick={goToC}
           sx={{ fontSize: '30rem', backgroundColor: 'transparent', color: 'white', border: 'none', }}>
-
-          <ShoppingCartIcon sx={{ fontSize: '3rem' }} />
+          <ShoppingCartIcon className='iconeSH' sx={{fontSize:"10%"}}/>
 
         </IconButton>
         <div style={{background:"gray",display:'flex',alignItems:'center',justifyContent:'center',width:'40px',height:'40px',borderRadius:'50%'}}>
@@ -92,7 +91,7 @@ const Header = (props:any) => {
           {signShow()}
         </div>
 
-        <Typography style={{paddingRight:'140px'}} variant="h4" component="h1"> GlobalMallOnline </Typography>
+        <Typography className='title' variant="h4" component="h1"> GlobalMallOnline </Typography>
 
         <IconButton
         onClick={() => {nav('/')}}
@@ -105,7 +104,7 @@ const Header = (props:any) => {
         >
           <HomeIcon sx={{ fontSize: '3rem' }} />
         </IconButton>
-      </Box>
+      </div>
       {show1()}
     </div>
     
