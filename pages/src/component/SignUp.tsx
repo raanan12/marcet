@@ -46,7 +46,7 @@ export default function SignUp(props:any) {
   
   
   return (
-      <div className='main'>
+      <div className='main1'>
 
           <div className='part1'>
               <p className='title'>Welcome to GlobalMallOnline...</p>

@@ -1,8 +1,9 @@
-import React,{useState,useContext} from 'react'
-import {useNavigate} from 'react-router-dom'
+import React,{useState,useContext} from 'react';
+import {useNavigate} from 'react-router-dom';
 import Alert from '@mui/material/Alert';
 import { Button, TextField } from '@mui/material'
-import {AllData} from '../contextApi'
+import {AllData} from '../contextApi';
+import './styls/propsClientStyle.css'
 
 export default function PropsClient() {
   const AllData1 = useContext(AllData)
@@ -77,7 +78,7 @@ export default function PropsClient() {
 
   }
   return (
-      <div className='productBuy' style={{ width: '33%', textAlign: 'left', paddingLeft: '30px' ,display:'flex',flexDirection:'column',justifyContent:'space-around'}}>
+      <div className='main1P'>
           <p style={{fontWeight:'bold'}}>costumer details </p>
           <TextField value={email}  type='email' onChange={(e)=>  {setEmail(e.target.value)}} fullWidth label="Email" id="outlined-disabled" />
           <TextField onChange={(e) => {setName(e.target.value) }} fullWidth label="Full Name" id="outlined-disabled" />

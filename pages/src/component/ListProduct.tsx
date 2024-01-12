@@ -5,7 +5,7 @@ import './styls/styleListProduct.css'
 export default function ListProduct() {
   let AllData1 = useContext(AllData)
   return (
-    <div className="main">
+    <div className="main1">
         {
             AllData1?.products.map((val,index)=>{
                 return <Product val={val} index={index}/>

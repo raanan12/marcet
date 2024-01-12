@@ -16,9 +16,9 @@ export default function ListProductBiy() {
     setPrice(num)
   },[AllData1?.choseProduct])
   return (
-    <div className='productBuy'>
-        <div style={{display:'flex',alignItems:'center',width:"80%"}}>
-            <div style={{display:'flex',alignItems:'center',justifyContent:'center',marginLeft:'8px'}}>
+    <div className='productBuy1'>
+        <div className='hedaer2' >
+            <div  style={{display:'flex',alignItems:'center',justifyContent:'center',marginLeft:'8px'}}>
                <ShoppingCartIcon sx={{marginRight:'8px',fontSize:'19px',padding:'1px',justifyContent:'center',background:'gray',display:'flex',alignItems:"center",borderRadius:'3px'}}/>
                <p style={{fontSize:'18px',color:'gray',fontWeight:'bold'}}> {`your shopping cart (${AllData1?.choseProduct.length} products)` }</p>
             </div>
@@ -29,7 +29,9 @@ export default function ListProductBiy() {
               sx={{
                   flexWrap: 'wrap',
                   overflowY: 'scroll',
-                  height: '400px',
+                  height: '75%',
+                  display:'flex',
+                  justifyContent:'center',
                   '&::-webkit-scrollbar': {
                       width: '8px',
                       height: '20px'
@@ -44,7 +46,7 @@ export default function ListProductBiy() {
                   <ProductBuy val={val} index={index}/>
               ))}
           </Box>
-        <p style={{textAlign:'left',fontSize:'20px',fontWeight:'600',margin:'10px',marginTop:'40px'}}>Total payment: ...... {price} ₪</p>
+        <p  className='priceS'>Total payment: ...... {price} ₪</p>
     </div>
   )
 }

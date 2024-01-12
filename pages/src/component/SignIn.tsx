@@ -45,9 +45,9 @@ export default function SignIn(props:any) {
   }
  
   return (
-     <div className='main'>
+     <div className='main1'>
 
-          <div className='part1'>
+          <div className='part1I'>
             <p className='title'>Welcome to GlobalMallOnline...</p>
               <p className='direction'>We are glad you chose to reconnect with us,
                   We are here to always give you the shopping experience from home in the most convenient and best way,
@@ -65,7 +65,7 @@ export default function SignIn(props:any) {
           </div>
 
 
-          <div className='part2'>
+          <div className='part2i'>
               <h1 style={{fontSize:'35px',marginBottom:'80px',fontWeight:'700'}}> Sign In</h1>
 
               <TextField
