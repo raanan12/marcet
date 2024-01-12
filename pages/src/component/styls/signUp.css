@@ -61,17 +61,21 @@
 }
 
 
-.down{
-  border-top: 2px solid white;
-  width: 80%;
-  margin-top: 80px;
-}
-
-
-.iconDown{
-  color: white;
-  font-size: 38px;
-  margin: 10px;
+@media (min-width:700px) {
+  
+  .down{
+    border-top: 2px solid white;
+    width: 80%;
+    margin-top: 80px;
+  }
+  
+  
+  .iconDown{
+    color: white;
+    font-size: 38px;
+    margin: 10px;
+  }
+  
 }
 
 
@@ -91,6 +95,19 @@
   width: 120px;
   height: 40px;
   margin: 5px;
+}
+
+.down{
+  border-top: 2px solid black;
+  width: 80%;
+  margin-top: 80px;
+}
+
+
+.iconDown{
+  color: black;
+  font-size: 38px;
+  margin: 10px;
 }
 }
 

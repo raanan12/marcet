@@ -1,4 +1,4 @@
-.main1{
+.main1S{
     display: flex;
     height: 99.3vh;
     width: 99%;
@@ -61,27 +61,27 @@
 }
 
 
-.down{
-  border-top: 2px solid white;
-  width: 80%;
-  margin-top: 80px;
-}
-
-
-.iconDown{
-  color: white;
-  font-size: 38px;
-  margin: 10px;
-}
 @media (min-width:600px) {
+  .down{
+    border-top: 2px solid white;
+    width: 80%;
+    margin-top: 80px;
+  }
+  
+  
+  .iconDown{
+    color: white;
+    font-size: 38px;
+    margin: 10px;
+  }
   
 }
-
 
 @media (max-width:600px) {
   .part1I{
     display: none;
   }
+
   .part2i{
     width: 100%;
     display: flex;
@@ -89,5 +89,16 @@
     align-items: center;
     height: 100%;
     justify-content: center;
-}
+  }
+
+  .down {
+    border-top: 2px solid black;
+    width: 80%;
+    margin-top: 80px;
+  }
+  .iconDown{
+    color: black;
+    font-size: 38px;
+    margin: 10px;
+  }
 }

@@ -25,13 +25,12 @@ export default function ListProductBiy() {
             <p style={{fontSize:'18px',color:'gray',fontWeight:'bold',marginLeft:'200px'}}> price</p>
             <p style={{fontSize:'18px',color:'gray',fontWeight:'bold',marginLeft:'160px'}}>Amount</p>
         </div>
-          <Box
+          <Box 
               sx={{
                   flexWrap: 'wrap',
                   overflowY: 'scroll',
                   height: '75%',
                   display:'flex',
-                  justifyContent:'center',
                   '&::-webkit-scrollbar': {
                       width: '8px',
                       height: '20px'

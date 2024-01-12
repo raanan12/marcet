@@ -46,7 +46,7 @@ export default function SignUp(props:any) {
   
   
   return (
-      <div className='main1'>
+      <div className='main1S'>
 
           <div className='part1'>
               <p className='title'>Welcome to GlobalMallOnline...</p>
@@ -127,6 +127,15 @@ export default function SignUp(props:any) {
               <div style={{ display: 'flex', justifyContent: 'space-between' ,width:'60%',marginBottom:'200px'}}>
                   <Button className='button' onClick={() => { chackAndAddProps(name, password, passwordConfirmation, email) }} variant="contained">sign Up</Button>
                   <Button className='button' onClick={() => { nav('/signIn') }} variant="outlined">Sign In</Button>
+              </div>
+
+              <div className='down'>
+                  <MailOutlineIcon className='iconDown' />
+                  <YouTubeIcon className='iconDown' />
+                  <FacebookIcon className='iconDown' />
+                  <InstagramIcon className='iconDown' />
+                  <TwitterIcon className='iconDown' />
+                  <TikTokIcon className='iconDown' />
               </div>
           </div>
       </div>

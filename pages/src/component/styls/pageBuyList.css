@@ -32,12 +32,18 @@
         box-shadow: 1px 1px 1px 1px gray;
         margin: 5px;
         border-radius: 10px;
-        padding: 16px;
         margin-top: 20px;
         flex-wrap: wrap;
+        padding: 15px;
     }
     .hedaer2{
         display: none ;
+    }
+        .priceS{
+        bottom: 10px;
+        text-align: left;
+        font-size:20px ;
+        font-weight: 600;
     }
     
 }

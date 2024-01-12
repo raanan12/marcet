@@ -45,7 +45,7 @@ export default function SignIn(props:any) {
   }
  
   return (
-     <div className='main1'>
+     <div className='main1S'>
 
           <div className='part1I'>
             <p className='title'>Welcome to GlobalMallOnline...</p>
@@ -80,6 +80,7 @@ export default function SignIn(props:any) {
                   }}
                   variant="standard"
                   onChange={(e) => { setName(e.target.value) }}
+                  placeholder='Enter your name'
               />
               <TextField
                   className='input'
@@ -93,11 +94,23 @@ export default function SignIn(props:any) {
                   }}
                   variant="standard"
                   onChange={(e) => { setPassword(e.target.value) }}
+                  placeholder='Enter pasword'
+
               />
               <div style={{ display: 'flex', justifyContent: 'space-between' ,width:'60%',marginBottom:'200px'}}>
                   <Button className='button' onClick={() => { chackAndAddProps(name, password) }} variant="contained">sign in</Button>
                   <Button className='button' onClick={() => { nav('/signUp') }} variant="outlined">sign up</Button>
               </div>
+
+
+              <div className='down'>
+                <MailOutlineIcon className='iconDown'/>
+                <YouTubeIcon className='iconDown'/>
+                <FacebookIcon className='iconDown'/>
+                <InstagramIcon className='iconDown'/>
+                <TwitterIcon className='iconDown'/>
+                <TikTokIcon className='iconDown'/>
+            </div>
 
           </div>
 
