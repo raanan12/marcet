@@ -66,7 +66,7 @@ export const Data1 = ({children}:ContextProviderProps)=>{
 
     const addUser = async (name:string,password:string,email:string) =>{
         let bulian = false
-        await fetch('/signUp',{
+        await fetch('http://localhost:3001/signUp',{
             headers: { "Accept": 'application/json', 'Content-Type': 'application/json' },
             method:'post',
             body:JSON.stringify({
@@ -93,7 +93,7 @@ export const Data1 = ({children}:ContextProviderProps)=>{
 
     const signIn = async (name:string,password:string)=>{
         let bulian = false
-        await fetch('/signIn',{
+        await fetch('http://localhost:3001//signIn',{
             headers: { "Accept": 'application/json', 'Content-Type': 'application/json' },
             method:'post',
             body:JSON.stringify({

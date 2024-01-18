@@ -6,6 +6,8 @@ import { Box } from '@mui/material';
 import Header from './Header';
 import ProductBuyFrom from './ProductBuyFrom';
 import OrderDetails from './OrderDetails';
+import './styls/pageBuy.css';
+import './styls/pageBuyList.css'
 export default function ShowBuyAfthr() {
   const AllData1 = useContext(AllData)
   return (
@@ -15,10 +17,10 @@ export default function ShowBuyAfthr() {
         <div style={{}}>
 
         </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', margin: '15px', height: '500px' }}>
-        <div className='productBuy'>
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '8px' }}>
+      <div className='main2'>
+        <div className='productBuy1'>
+          <div className='hedaer2' >
+            <div  style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginLeft: '8px' }}>
               <ShoppingCartIcon sx={{ marginRight: '8px', fontSize: '19px', padding: '1px', justifyContent: 'center', background: 'gray', display: 'flex', alignItems: "center", borderRadius: '3px' }} />
               <p style={{ fontSize: '18px', color: 'gray', fontWeight: 'bold' }}>the products you purchased</p>
             </div>
@@ -27,9 +29,10 @@ export default function ShowBuyAfthr() {
           </div>
           <Box
             sx={{
+              display:'flex',
               flexWrap: 'wrap',
               overflowY: 'scroll',
-              height: '400px',
+              height: '75%',
               '&::-webkit-scrollbar': {
                 width: '8px',
                 height: '20px'

@@ -45,8 +45,8 @@ const Header = (props:any) => {
       // show logged-in user
       return (
         <div onClick={()=>{nav('/pageUser')}} style={{ display: 'flex', marginLeft: "10px", alignItems: 'center', borderLeft: 'gray 2px solid', paddingLeft: '10px' }}>
-          <p>{AllData1?.userConect.name}</p>
-          <AccountCircleRoundedIcon sx={{ fontSize: '2rem', marginLeft: '5px' }} />
+          <p style={{color:"white"}}>{AllData1?.userConect.name}</p>
+          <AccountCircleRoundedIcon sx={{ fontSize: '2rem', marginLeft: '5px' ,color:'white'}} />
         </div>
       )
     }

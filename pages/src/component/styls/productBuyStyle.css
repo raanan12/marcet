@@ -1,4 +1,4 @@
-@media (min-width:600px) {
+@media (min-width:700px) {
     .productChosB1{
         margin: 10px;
         display: flex;
@@ -20,11 +20,11 @@
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     .productChosB1{
         display: flex;
         justify-content: space-around;
-        width: 190;
+        width: 190px;
         margin: 10px;
         flex-direction: column;
         align-items: center;
@@ -54,13 +54,22 @@
         width: 100%;
         padding-right: 10px;
     }
+    .pricef{
+        font-size: 20px;
+        font-weight: bold;
+        width: 100%;
+        padding-right: 10px;
+    }
+    .acuntB{
+        font-weight: bold;
+    }
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     .productChosB1{
         display: flex;
         justify-content: space-around;
-        width: 100%;
+        width: 85%;
         margin: 10px;
         flex-direction: column;
         align-items: start;
@@ -101,6 +110,18 @@
     .buttonDel{
         display: flex;
         justify-content: end;
+        align-items: center;
+        width: 100%;
+    }
+    .pricef{
+        text-align: left;
+        font-size: 20px;
+        font-weight: bold;
+        width: 100%;
+        padding-right: 10px;
+    }
+    .buttonDelF{
+        display: flex;
         align-items: center;
         width: 100%;
     }

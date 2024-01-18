@@ -1,4 +1,4 @@
-@media (min-Width:600px) {
+@media (min-Width:700px) {
     .main1P{
         width: 35%;
         text-align: left;
@@ -13,7 +13,7 @@
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     .main1P{
         width: 90%;
         text-align: left;

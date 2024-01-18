@@ -29,8 +29,8 @@ export default function ListProductBiy() {
               sx={{
                   flexWrap: 'wrap',
                   overflowY: 'scroll',
-                  height: '75%',
                   display:'flex',
+                  height:'70%',
                   '&::-webkit-scrollbar': {
                       width: '8px',
                       height: '20px'

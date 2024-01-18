@@ -26,6 +26,11 @@
         height: 25px;
         width: 100%;
     }
+    .button:active {
+        background: rgb(5, 146, 5);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transform: translateY(2px);
+    }
 
 }
 
@@ -40,6 +45,7 @@
         width: 150px;
         margin-left: 20px;
     }
+
     .img{
         height: 235px;
         width: 255px;
